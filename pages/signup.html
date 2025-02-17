@@ -13,6 +13,97 @@
 
     <h1>Sign Up Form</h1>
  
+    <form action="../results.html" method="GET">
+      <fieldset>
+        <legend>Demographic Info</legend>
+
+        <label>
+          Full Name
+          <input type="text" placeholder="Enter your name" name="fullname" />
+        </label>
+
+        <br />
+
+        <label>
+          Sex
+          <select name="sex">
+            <option value="1">male</option>
+            <option value="2">female</option>
+            <option value="3">other</option>
+          </select>
+        </label>
+
+        <br>
+
+        <label for="dob">Date Of Birth</label>
+        <input type="date" value="2000-01-01" name="dob" />
+
+
+        <br>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Info</legend>
+
+        <label>
+          Email
+          <input type="email" name="email" />
+        </label>
+
+        <br />
+
+        <label>
+          County
+          <input list="counties" name="county" />
+          <datalist id="counties">
+            <option value="Caroni"></option>
+            <option value="Mayaro"></option>
+            <option value="Nariva"></option>
+            <option value="Saint Andrew"></option>
+            <option value="Saint David"></option>
+            <option value="Saint George"></option>
+            <option value="Saint Patrick"></option>
+            <option value="Victoria"></option>
+          </datalist>
+        </label>
+
+        <br />
+
+        <label>
+          Telephone
+          <input type="tel" name="telephone" />
+        </label>
+      </fieldset>
+
+     <fieldset>
+        <legend>Courses</legend>
+
+        <label>
+          <input type="checkbox" name="courses" value="info1601" checked/>
+          <span>Info 1601</span>
+        </label>
+      
+        <label>
+          <input type="checkbox" name="courses" value="comp1602"/>
+          <span>COMP 1602</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1603"/>
+          <span>COMP 1603</span>
+        </label>
+
+        <label>
+          <input type="checkbox" name="courses" value="comp1604"/>
+          <span>COMP 1604</span>
+        </label>
+
+      </fieldset>
+
+      <br>
+      <input type="submit" value="signup" />
+    </form>
 
   </body>
 </html>
